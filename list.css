@@ -1,0 +1,37 @@
+:root {
+    --blue: #0d0d3f;
+    --white: #ffff;
+    --color: #e8f1f2;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--color);
+    margin: 0; /* Removendo a margem padrão do corpo */
+}
+
+h1 {
+    color: var(--blue);
+    margin: 0; /* Removendo a margem padrão do h1 */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+}

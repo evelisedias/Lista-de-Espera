@@ -1,0 +1,88 @@
+:root {
+    --blue: #0d0d3f;
+    --white: #ffff;
+    --color: #e8f1f2;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--color);
+    margin: 0; /* Removendo a margem padrão do corpo */
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    color: var(--blue);
+    margin: 0; /* Removendo a margem padrão do h1 */
+    margin-bottom: 2em;
+}
+
+.form {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.form input {
+    display: block;
+    width: 100% !important;
+    margin-bottom: 2em;
+}
+
+.form-input {
+    width: 100%;
+    display: block;
+    margin-bottom: 2em;
+}
+
+
+.save{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+}
+
+.list {
+    display: inline-block; /* Mudando para inline-block */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 3em;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" type="text/css" href="/Lista_de_clientes/list.css">
+</head>
+<body>
+    <h1>Lista de Clientes</h1>
+    
+    <div id="resultado_php">
+        <!-- Aqui será inserido o resultado do PHP -->
+    </div>
+
+    <div id="paginacao">
+        <!-- Aqui serão inseridos os links de paginação -->
+    </div>
+
+    <footer>
+        <img src="/Lista_de_clientes/_img/fila.png" alt="Logo">
+    </footer>
+
+    <script>
+        // Função para carregar os dados do PHP via AJAX
+        function carregarDados(pagina) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("resultado_php").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "index_get.php?pagina=" + pagina, true);
+            xmlhttp.send();
+        }
+
+        // Carregar os dados quando a página carregar
+        window.onload = function() {
+            carregarDados(1); // Carregar a primeira página por padrão
+        };
+    </script>
+</body>
+</html>

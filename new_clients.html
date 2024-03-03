@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Sistema de Reserva</title>
+    <link rel="stylesheet" type="text/css" href="new_client.css">
+</head>
+<body>
+    <h1>Sistema de Reserva</h1>
+
+    <form action="index_post.php" method="post">
+        <input class="form-input" type="text" id="name" name="name" required placeholder="Nome">
+        <input class="form-input" type="phone" id="phone" name="phone" placeholder="Telefone com DDD">
+        <button class="save">Salvar</button>
+    </form>
+    
+    <button class="list" id="listButton">Acessar Lista</button>
+   
+</body>
+<footer>
+    <img src="\Lista_de_clientes\_img\fila.png" alt="fila">
+</footer>
+
+<script>
+    //adicionado evento
+    document.getElementById("listButton").addEventListener("click", function(){
+        window.location.href="list.html";
+    })
+</script>
+<html>
